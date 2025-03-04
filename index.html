@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文件阅读</title>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script> -->
+
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: gray;
+        width: 100vw;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+    }
+
+    .main {
+        display: flex;
+    }
+
+    .directory {
+        background-color: black;
+        position: relative;
+        display: inline-block;
+    }
+
+    ul,
+    li {
+        list-style: none;
+        color: aliceblue;
+        cursor: pointer;
+        font-size: small;
+    }
+
+    li {
+        padding-top: 10px;
+    }
+
+    .tree>ul {
+        padding: 10px;
+    }
+
+    .detail {
+        width: 500px;
+        position: relative;
+        background-color: bisque;
+    }
+
+    summary {
+        list-style: none;
+    }
+
+    .title {
+        padding: 10px;
+
+    }
+
+    /* summary::before {
+        content: '>';
+        margin-right: 8px;
+    }
+
+    details[open] summary::before {
+        content: '∨';
+    } */
+</style>
+
+<body>
+    <div class="title">文件展示</div>
+    <div class="main">
+        <div class="directory">
+            <div class="tree"></div>
+        </div>
+        <div class="detail"></div>
+    </div>
+
+</body>
+<script type="module" src="index.js"></script>
+
+</html>
